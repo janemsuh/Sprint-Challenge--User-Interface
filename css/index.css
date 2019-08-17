@@ -71,6 +71,22 @@ p {
     margin: 0 auto;
 }
 
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 20px 0 40px 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    margin: 20px 0;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -83,6 +99,10 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+
+.top-content .text-container.about-page {
+    width: 100%;
 }
 
 .middle-content {
@@ -110,6 +130,92 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@keyframes links {
+    0% {transform: rotate(0deg); height: 200px;}
+    50% {transform: rotate(360deg)}
+    100% {transform: rotate(-180deg); height: 100px;}
+}
+
+.middle-content .boxes .box:hover {
+    background: white;
+    color: black;
+    animation-name: links;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.middle-content .boxes .box.teal {
+    background: teal;
+}
+
+.middle-content .boxes .box.gold {
+    background: gold;
+}
+
+.middle-content .boxes .box.cadetblue{
+    background: cadetblue;
+}
+
+.middle-content .boxes .box.coral {
+    background: coral;
+}
+
+.middle-content .boxes .box.crimson {
+    background: crimson;
+}
+
+.middle-content .boxes .box.forestgreen {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box.darkorchid {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box.hotpink {
+    background: hotpink;
+}
+
+.middle-content .boxes .box.indigo {
+    background: indigo;
+}
+
+.middle-content .boxes .box.dodgerblue {
+    background: dodgerblue;
+}
+
+.middle-content.about-page {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: none;
+}
+
+.middle-content.about-page .item {
+    width: 45%;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+    margin: 10px 20px;
+}
+
+.middle-content.about-page .item img {
+    width: 100%;
+}
+
+.middle-content.about-page .item h2 {
+    padding: 10px 0;
+}
+
+.middle-content.about-page .item button {
+    font-size: 14px;
+    padding: 5px 20px;
+    border-radius: 8px;
+    border: 2px solid black;
+    margin-top: 16px;
 }
 
 .bottom-content {
